@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang=en>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Contact Info</title>
+<head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;}
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+}
+
+#BGVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#PauseNPlay {
+  width: 100px;
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+#PauseNPlay:hover {
+  background: #ddd;
+  color: black;
+}
+
+#Home {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(128, 150, 252);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Home:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+#About {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(120, 255, 192);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#About:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+#Hobbies {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(255, 208, 120);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Hobbies:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+#Poetries {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(120, 255, 154);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Poetries:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+#Travels {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(120, 255, 255);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Travels:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+
+#Contact {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(255, 120, 120);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Contact:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);} 
+
+.fa {  
+  padding:20px 5px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  border-radius: 50%;
+		}
+
+.fa:hover {
+  		opacity: 0.7;
+			}
+
+.fa-facebook {
+		  background: #3B5998;
+      color: white;
+      padding-right: 15px;
+			}
+.fa-twitter {
+		  background: #55ACEE;
+      color: white;
+      padding-right: 15px;
+			}
+.fa-instagram {
+		  background: #8a3ab9;
+      color: white;
+      padding-right: 20px;
+			}
+
+
+.main{
+    width: 100%;
+    position:absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;}
+h1{
+    color:rgb(255, 152, 152);
+    font-size:xx-large;}
+h2{
+    color:rgb(255, 250, 250);
+    font-size:large;
+}
+p{
+  color:aquamarine;
+  font-size: small;
+}
+
+</style>
+</head>
+<body>
+    <video autoplay muted loop id="BGVideo">
+        <source src="lapse.mp4" type="video/mp4">
+      </video>
+
+    <div class="content">
+      <a href="Index.html"><button id="Home">Home</button></a>
+      <a href="about.html"><button id="About">About</button></a>
+      <a href=hobbies.html><button id="Hobbies">Hobbies</button></a>
+      <a href="poetries.html"><button id="Poetries">Poetries</button></a> 
+      <a href="travel.html"><button id="Travels">Travels</button></a>
+      <a href="contact.html"><button id="Contact">Contact</button></a>
+      <button id="PauseNPlay" onclick="myFunction()">Pause</button>  
+    </div>
+
+    <div class="main"> 
+        <h1>Contact Information</h1>
+        <br>
+        <h2>Emaill Address:<br>hrc.belenczethina@gmail.com</h2>
+        <br>
+        <p><i>Feel free to follow me<br>Below are my social media accounts:</i></p>
+        <br>
+        <a href="https://www.facebook.com/MikuriSaito23" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/MikuriSaito" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/vreugde.b/" class="fa fa-instagram"></a>
+      
+<script>
+var video = document.getElementById("BGVideo");
+var btn = document.getElementById("PauseNPlay");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</div>
+</body>
+</html>

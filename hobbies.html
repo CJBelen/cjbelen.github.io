@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang=en>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hobbies</title>
+<head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;}
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+}
+
+#BGVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#PauseNPlay {
+  width: 100px;
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+#PauseNPlay:hover {
+  background: #ddd;
+  color: black;
+}
+
+#Home {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(128, 150, 252);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Home:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+#About {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(120, 255, 192);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#About:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+#Hobbies {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(255, 208, 120);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Hobbies:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+#Poetries {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(120, 255, 154);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Poetries:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+#Travels {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(120, 255, 255);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Travels:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+
+#Contact {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(255, 120, 120);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Contact:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);} 
+.main{
+    width: 100%;
+    position:absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;}
+h1{
+    color:rgb(255, 250, 250);
+    font-size:xx-large;}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+    <video autoplay muted loop id="BGVideo">
+        <source src="lapse.mp4" type="video/mp4">
+      </video>
+
+    <div class="content">
+      <a href="Index.html"><button id="Home">Home</button></a>
+      <a href="about.html"><button id="About">About</button></a>
+      <a href=hobbies.html><button id="Hobbies">Hobbies</button></a>
+      <a href="poetries.html"><button id="Poetries">Poetries</button></a> 
+      <a href="travel.html"><button id="Travels">Travels</button></a>
+      <a href="contact.html"><button id="Contact">Contact</button></a>
+      <button id="PauseNPlay" onclick="myFunction()">Pause</button>
+      
+    </div>
+    <div class="main"> 
+        <h1>My Hobbies</h1>
+    
+        <div class="gallery">
+          <a target="_blank" href="/C:/Users/Czethina/Desktop/HTML/images/dnd.jpg">
+            <img src="/C:/Users/Czethina/Desktop/HTML/images/dnd.jpg" alt="DungeonsAndDragons" width="600" height="400">
+          </a>
+          <div class="desc">Dungeons and Dragons is a fantasy table-top role-playing game.</div>
+        </div>
+        
+        <div class="gallery">
+          <a target="_blank" href="/C:/Users/Czethina/Desktop/HTML/images/mtg.jpg">
+            <img src="/C:/Users/Czethina/Desktop/HTML/images/mtg.jpg" alt="MagicTheGathering" width="600" height="400">
+          </a>
+          <div class="desc">Magic:The Gathering is a table-top card game whereas the players summon monsters and defeat its opponents.</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="/C:/Users/Czethina/Desktop/HTML/images/netflix.jpg">
+            <img src="/C:/Users/Czethina/Desktop/HTML/images/netflix.jpg" alt="Netflix" width="600" height="400">
+          </a>
+          <div class="desc">Netflix is a streaming service that allows its members to watch tv shows and movies without commercials.</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="/C:/Users/Czethina/Desktop/HTML/images/wattpad.jpg">
+            <img src="/C:/Users/Czethina/Desktop/HTML/images/wattpad.jpg" alt="Wattpad" width="600" height="400">
+          </a>
+          <div class="desc">Wattpad is a writing community where you can post your stories and read the stories of other authors.</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="/C:/Users/Czethina/Desktop/HTML/images/blank.jpg">
+            <img src="/C:/Users/Czethina/Desktop/HTML/images/blank.jpg" alt="Blank" width="600" height="400">
+          </a>
+          <div class="desc">Writing poems is part of my hobby. And I have a Facebook Page which is Blank but you can see a few poems on the Poetries tab.</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="/C:/Users/Czethina/Desktop/HTML/images/ml.jpg">
+            <img src="/C:/Users/Czethina/Desktop/HTML/images/ml.jpg" alt="ML" width="600" height="400">
+          </a>
+          <div class="desc">ML or Mobile Legends is a 5v5 MOBA for handheld devices that offers a variety of playable heroes, game modes, and intense, fast-paced gameplay.</div>
+        </div>
+        
+        <div class="gallery">
+          <a target="_blank" href="/C:/Users/Czethina/Desktop/HTML/images/secretgarden.jpg">
+            <img src="/C:/Users/Czethina/Desktop/HTML/images/secretgarden.jpg" alt="SecretGarden" width="600" height="400">
+          </a>
+          <div class="desc">Secret Garden is an adult coloring book. It also serves as my relaxing theraphy.</div>
+        </div>
+
+
+</div>
+
+<script>
+var video = document.getElementById("BGVideo");
+var btn = document.getElementById("PauseNPlay");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</div>
+</body>
+</html>

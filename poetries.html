@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang=en>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poetries</title>
+<head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;}
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+  max-height: 100vh;
+}
+
+#BGVideo {
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.absolute-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+#PauseNPlay {
+  width: 100px;
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+#PauseNPlay:hover {
+  background: #ddd;
+  color: black;
+}
+
+#Home {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(128, 150, 252);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Home:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+#About {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(120, 255, 192);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#About:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+#Hobbies {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(255, 208, 120);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Hobbies:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+#Poetries {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(120, 255, 154);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Poetries:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+#Travels {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(120, 255, 255);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Travels:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+
+#Contact {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(255, 120, 120);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Contact:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);} 
+
+.main {
+  height: calc(100vh - 81px);
+  max-height: calc(100vh - 81px);
+  width: 100%;
+  text-align: center;
+  overflow: auto;
+  color:rgb(247, 148, 148);
+}
+h1{
+    color:rgb(255, 250, 250);
+    font-size:xx-large;}
+h5{
+  color:white;
+}
+
+</style>
+</head>
+<body>
+    <video autoplay muted loop id="BGVideo">
+        <source src="lapse.mp4" type="video/mp4">
+      </video>
+
+      <div class="absolute-container">
+        <div class="content">
+         <a href="Index.html"><button id="Home">Home</button></a>
+         <a href="about.html"><button id="About">About</button></a>
+         <a href=hobbies.html><button id="Hobbies">Hobbies</button></a>
+         <a href="poetries.html"><button id="Poetries">Poetries</button></a> 
+         <a href="travel.html"><button id="Travels">Travels</button></a>
+         <a href="contact.html"><button id="Contact">Contact</button></a>
+         <button id="PauseNPlay" onclick="myFunction()">Pause</button>
+        
+        </div>
+
+        <div class="main"> 
+          <h1>Poetries</h1>
+          <br>
+          <h5><i>All of my poetries are all made by myself.<br>As of this moment, I have 94 poetries all in all. And still counting.</i></h5>
+          <br>
+          <h2><b>1. Hambing</b></h2>
+          <br>
+          <p>Pakiramdam ng isang kapatid na walang kwenta<br> 
+          Na kahit anong gawin niya<br> 
+          Kahit talino ay sobra<br>
+          Wala pa din ang lahat na kaniyang ginagawa</p>
+          <br>
+          <p>Paghahambing at pagpapababa<br> 
+          Sa anak na lahat ay ginawa<br> 
+          Nilugmok sa kailaliman<br>
+          At binigyan ng buong kadiliman</p> 
+          <br>    
+          <p>Umiyak, Nagmukmok<br> 
+          Walang ginawa kahit magamok<br>
+          Natakpan na lang ng alikabok<br>
+          Ang ginawa niyang kinain na ng lamok</p>
+          <br>    
+          <p>Pero kahit ganoon<br> 
+          Hindi nagtapos ang lahat doon<br>
+          Nagsikap, humagod<br>
+          Para makaramdam din ng ahon</p>
+          <br>
+          <p>Nakaahon sa paghahambing<br>
+          Kahit na walang natatanggap kahit isang lambing<br> 
+          Kahit na siya ay inilibing<br>
+          Unti-unti pa ding natupad ang kaniyang mga hiling</p> 
+          <br>
+          <p>Kung kaya’t ako’y nasa tuktok<br>
+          Ng isang mahirap na tatsulok<br>
+          Na pinagdaanan ay problema na kabundok<br> 
+          Pero kahit ganoon, hinding hindi magpapalubog.</p>
+          <br>
+          <hr>
+        
+          <h2><b>2. Tambak</b></h2>
+          <p>Ilang ulit? Ilang paghihirap?<br> 
+            Ang aking bawat na pangarap<br> 
+            Na aking pinagsusumikap<br> 
+            Kahit buong gabing walang kurap</p> 
+            <br>
+          <p>Daming gawain<br> 
+            Hindi na alam kung alin ang uunahin<br>
+            Di na alam kung paano tatapusin<br> 
+            Tila ako ay para ng hihimatayin</p> 
+            <br>
+          <p>Sakit sa ulo<br>
+            Ngayon ko lang napagtanto<br> 
+            Kung gaano kahirap ang mundo<br> 
+            At kung anong klaseng gulo itong pinasok ko</p> 
+          <br>    
+          <p>Pero lahat gagawin<br>
+            Para sa pangarap na aabutin<br> 
+            At mas lalo pa aking pagbubutuhin<br>
+            Para maabot ang tuktok na sa dulo aanihin</p>
+            <br>  
+          <p>Sa tuktok<br>
+            Doon lang dapat nakatutok<br> 
+            Kahit na daan patungo ay gabundok<br> 
+            Ng mga gawain at paghihirap na akin lang ilulunok</p>
+            <br>    
+          <p>Ilulunok hanggang sa kalamnan<br> 
+            Kahit masakitan ng kasikmuraan<br> 
+            Tutungo pa din sa daan<br> 
+            Kahit na nahihirapan</p>
+            <br>  
+          <p>Tatahakin ang daang makitid<br> 
+            Kahit na mapatid<br> 
+            Madapa at di na makapihit<br> 
+            Dahil alam ko sa dulo labi ko’y may ngiting guhit</p> 
+            <br>  
+          <p>Pagkatapos ng paghihirap<br>
+            Ngiti ay ihaharap<br>
+            Dahil sa wakas ito na ang pangarap<br> 
+            Na matagal ko ng hinahanap</p>
+            <br>
+            <hr>
+
+            <h2><b>3. Lugmok</b></h2>
+            <p>May iba’t ibang estado<br> 
+              Ang buhay ng isang tao<br> 
+              Na pwedeng ikaw at ako<br>
+              Ang sangkot sa ganito</p>
+              <br>  
+            <p>Mayroong mahirap at mayaman<br> 
+              Pero halos parehas lang naman ang katalinuhan<br>
+              Ayun nga lang iba ang tinatayuan<br> 
+              Dahil ang pagiging mahirap? Laging tinatapakan</p> 
+              <br>  
+            <p>Oo, mahirap lang ako.<br> 
+              Simpleng mag-aaral na nagtatrabaho<br> 
+              Diyan sa kalakal sa kanto<br> 
+              Para lang sa panginom ng tatay ko</p> 
+              <br>  
+            <p>Oo, mahirap lang kami<br>
+              Pero kahit kalian di kami nagpaapi<br>
+              Di namin kayang yabang ay ipagsabi<br> 
+              Kahit na kami ay matalino at higaan naming ay tagpi-tagpi</p>
+              <br> 
+            <p>Oo, mahirap simula pa nung tumayo ako dito sa mundo<br> 
+              Pero hindi ibig sabihin hanggang doon na lang ako<br>
+              Oo, mahirap nga lang cguro<br>
+              Dahil walang makain dapat wala ding matuto</p>
+              <br>  
+            <p>Pero hindi kami utu-uto<br> 
+              Dahil kami ay tao lang din na katulad mo<br> 
+              Susubukang tumayo<br>
+              Hanggang sa ako ay malumpo</p>
+              <br>
+            <p>Iaahon ko ang pamilya ko<br>
+              Mula sa pagkakalugmok ng mundo<br>
+              Dahil ang aming kwento?<br> 
+              Hindi nagtatapos dito</p>
+              <br> 
+            <p>Kung kaya’t nagsumikap<br> 
+              Para maabot ang tuktok na pangarap<br> 
+              Buong lakas ilalangap<br> 
+              Ang mistulang pangarap na nasa ulap</p>
+              <br> 
+            <p>Aabutin at aahon<br>
+              Patuloy lang na babangon<br> 
+              Dahil nakikita ko ang sarili ko na nandoon<br> 
+              Sa tuktok ng tatsulok ang mata nakatuon</p>
+              <br>
+            <p>Nagsumikap at nagtagumpay<br> 
+              Hayahay na ang naging buhay<br>
+              Nakaahon kahit wala na ang tatay<br> 
+              Pero itong lahat sa kaniya ko lang inilay</p> 
+              <br>
+            <p>Dahil kahit kailan hindi hadlang ang kahirapan<br> 
+              Upang ang pangarap ay hindi pagigahan<br>
+              Tiwala sa sarili at pananalig sa Diyos lang ang kailangan<br> 
+              Makakatungtong ka din sa kasarinlan</p>
+              <br>
+      </div>
+    </div>
+
+<script>
+var video = document.getElementById("BGVideo");
+var btn = document.getElementById("PauseNPlay");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</div>
+</body>
+</html>

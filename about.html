@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang=en>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Me</title>
+<head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;}
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+}
+
+#BGVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#PauseNPlay {
+  width: 100px;
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+#PauseNPlay:hover {
+  background: #ddd;
+  color: black;
+}
+
+#Home {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(128, 150, 252);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Home:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+#About {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(120, 255, 192);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#About:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+#Hobbies {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(255, 208, 120);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Hobbies:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+#Poetries {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(120, 255, 154);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Poetries:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+#Travels {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(120, 255, 255);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Travels:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+
+#Contact {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(255, 120, 120);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Contact:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);} 
+.main{
+    width: 100%;
+    position:absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;}
+h1{
+    color:rgb(157, 255, 128);
+    font-size:xx-large;}
+h2{
+    color:rgb(161, 144, 238);
+    font-size:large;}
+
+body {
+  font-family: Times New Roman;
+  margin: 0;
+}
+.slider {
+        width: 500px;
+        height: 300px;
+        background-color: rgb(116, 239, 255);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 1500px;
+        background-color: rgb(252, 126, 147);
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: rgb(161, 144, 238);
+      }
+</style>
+</head>
+<body>
+    <video autoplay muted loop id="BGVideo">
+        <source src="lapse.mp4" type="video/mp4">
+      </video>
+
+
+    <div class="content">
+      <a href="Index.html"><button id="Home">Home</button></a>
+      <a href="about.html"><button id="About">About</button></a>
+      <a href=hobbies.html><button id="Hobbies">Hobbies</button></a>
+      <a href="poetries.html"><button id="Poetries">Poetries</button></a>
+      <a href="travel.html"><button id="Travels">Travels</button></a>
+      <a href="contact.html"><button id="Contact">Contact</button></a>
+      <button id="PauseNPlay" onclick="myFunction()">Pause</button>
+    </div>
+
+    <div class="main"> 
+        <h1>All About Me</h1>
+
+    <div class="slider">
+          <span id="slide-1"></span>
+          <span id="slide-2"></span>
+          <span id="slide-3"></span>
+          <div class="image-container">
+            <img src="/C:/Users/Czethina/Desktop/HTML/images/me/me1.jpg" class="slide" width="500" height="300" />
+            <img src="/C:/Users/Czethina/Desktop/HTML/images/me/me2.jpg"  class="slide" width="500" height="300" />
+            <img src="/C:/Users/Czethina/Desktop/HTML/images/me/me3.jpg"  class="slide" width="500" height="300" />
+          </div>
+          <div class="buttons">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+        
+          </div>
+        </div>
+
+          <h2 style="text-align:center">I am Czethina Joy Belen. 21 yrs. old.<br>I am a Third Year BS IT student of Polytechnic University of the Philippines.<br>I live in Santa Rosa, Laguna. And still learning how to code properly.</h2> 
+  
+</div>
+
+<script>
+var video = document.getElementById("BGVideo");
+var btn = document.getElementById("PauseNPlay");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</div>
+</body>
+</html>

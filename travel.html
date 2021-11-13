@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang=en>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Travels</title>
+<head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;}
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+}
+
+#BGVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#PauseNPlay {
+  width: 100px;
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+#PauseNPlay:hover {
+  background: #ddd;
+  color: black;
+}
+
+#Home {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(128, 150, 252);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Home:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+#About {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(120, 255, 192);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#About:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+#Hobbies {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(255, 208, 120);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Hobbies:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+#Poetries {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(120, 255, 154);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Poetries:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+#Travels {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(120, 255, 255);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Travels:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
+
+
+#Contact {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(255, 120, 120);
+  color: rgb(5, 4, 4);
+  cursor: pointer;}
+#Contact:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);} 
+.main{
+    width: 100%;
+    position:absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;}
+h1{
+    color:rgb(255, 250, 250);
+    font-size:xx-large;}
+
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  top: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}    
+
+</style>
+</head>
+<body>
+    <video autoplay muted loop id="BGVideo">
+        <source src="lapse.mp4" type="video/mp4">
+      </video>
+    
+    <div class="content">
+      <a href="Index.html"><button id="Home">Home</button></a>
+      <a href="about.html"><button id="About">About</button></a>
+      <a href=hobbies.html><button id="Hobbies">Hobbies</button></a>
+      <a href="poetries.html"><button id="Poetries">Poetries</button></a> 
+      <a href="travel.html"><button id="Travels">Travels</button></a>
+      <a href="contact.html"><button id="Contact">Contact</button></a>
+      <button id="PauseNPlay" onclick="myFunction()">Pause</button>
+    </div>
+
+    <div class="main"> 
+        <h1 style="text-align: center;">Travels</h1>
+    </div>
+      <div class="container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="/C:/Users/Czethina/Desktop/HTML/images/1.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="/C:/Users/Czethina/Desktop/HTML/images/2.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="/C:/Users/Czethina/Desktop/HTML/images/3.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="/C:/Users/Czethina/Desktop/HTML/images/4.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="/C:/Users/Czethina/Desktop/HTML/images/5.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img src="/C:/Users/Czethina/Desktop/HTML/images/6.jpg" style="width:100%">
+        </div>
+        
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="/C:/Users/Czethina/Desktop/HTML/images/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Mt. Daraitan">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/C:/Users/Czethina/Desktop/HTML/images/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Taal Volcano">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/C:/Users/Czethina/Desktop/HTML/images/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Hinulugang Taktak Falls">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/C:/Users/Czethina/Desktop/HTML/images/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Laiya Beach">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/C:/Users/Czethina/Desktop/HTML/images/5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Laiya Adventure Park">
+        </div>    
+        <div class="column">
+          <img class="demo cursor" src="/C:/Users/Czethina/Desktop/HTML/images/6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Sky Ranch Tagaytay">
+        </div>
+      </div>
+    </div>
+
+<script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+var video = document.getElementById("BGVideo");
+var btn = document.getElementById("PauseNPlay");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</div>
+</body>
+</html>
